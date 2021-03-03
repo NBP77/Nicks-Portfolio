@@ -1,3 +1,74 @@
-body { background-color:lightcyan; 
-    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0p;
+
+
+}
+
+body { font-family: Helvetica, Arial, sans-serif; 
+    color:lightcyan; 
+    font-weight: 500; 
+    font-size: 16px; 
+    text-decoration: none;
+    background-color: rgb(102, 102, 102);
+    display: flex; flex-direction: column;
+    min-height: 100vh;
+}
+   
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: cornflowerblue;
+   
+}
+
+.nav-links {
+    list-style: none;
+
+}
+
+.nav-links li { 
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Why does nav bar links twitch when I click? */
+.nav-links li a {
+    transition: all 0.3s ;  
+}
+
+.nav-links li a:hover {
+    color: rgb(40, 40, 116);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: cornflowerblue;
+    margin-top: auto;
+}
+
+.contact { 
+    list-style: none;     
+}
+
+.contact li {
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.contact li a {
+    transition: all 0.3s ;  
+}
+
+.contact li a:hover {
+    color: rgb(40, 40, 116);
 }
