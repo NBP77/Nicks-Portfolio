@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0p;
+}
+
+:root {
 
 
 }
@@ -72,3 +75,77 @@ footer {
 .contact li a:hover {
     color: rgb(40, 40, 116);
 }
+
+.banner { 
+    width: 100%;
+   display: block;
+}
+
+h3 { display: flex; 
+    justify-content: flex-end;
+    margin-right: 100px;
+
+}
+
+.article { display: flex;
+    flex-direction:column;
+    margin-left: 100px; 
+    margin-top: 30px;
+    font-size: 23px;
+}
+
+
+.about { display: flex; 
+    flex-direction: column;
+  
+   
+
+}
+
+.me {display: flex; 
+    flex-direction: column;
+    margin-left: 43px; 
+    margin-top: 0px;
+}
+
+p { position: absolute;
+    font-size: 12px;
+    padding-left: 30px;
+    margin-bottom: 25px;
+    margin-left: 90px;
+    border-left: solid cornflowerblue;
+}
+
+.article-2 { display: flex;
+    flex-direction:column;
+    margin-left: 100px; 
+    margin-top: 30px;
+    font-size: 23px;
+}
+
+.work { display: flex; 
+    flex-direction: column;
+    margin-left: 12px; 
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 992px) {
+     
+  }
+  
+  @media screen and (max-width: 768px) {
+    
+  }
+  
+  @media screen and (max-width: 576px) {
+
+
+    }
+  }
+  
