@@ -39,7 +39,7 @@ header {
     font-weight: bold;
 }
 
-/* Why does nav bar links twitch when I click? */
+
 .nav-links li a {
     transition: all 0.3s ;  
 }
@@ -48,14 +48,25 @@ header {
     color: rgb(40, 40, 116);
 }
 
+.banner { 
+    height: 200px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../assets/images/outdoor.jpg");
+    background-size: cover;
+    background-position: center ;
+
+}
 
 footer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: cornflowerblue;
     margin-top: auto;
+}
+
+h4 {font-size: 25px;
 }
 
 .contact { 
@@ -66,6 +77,7 @@ footer {
     display: inline-block;
     padding: 10px;
     font-weight: bold;
+   
 }
 
 .contact li a {
@@ -76,10 +88,6 @@ footer {
     color: rgb(40, 40, 116);
 }
 
-.banner { 
-    width: 100%;
-   display: block;
-}
 
 h3 { display: flex; 
     justify-content: flex-end;
@@ -98,7 +106,6 @@ h3 { display: flex;
 .about { display: flex; 
     flex-direction: column;
   
-   
 
 }
 
@@ -123,26 +130,67 @@ p { position: absolute;
     font-size: 23px;
 }
 
-.work { display: flex; 
-    flex-direction: column;
-    margin-left: 12px; 
-    margin-top: 50px;
+
+.wrapper .work { 
+    text-align: left;
+    font-size: 23px;
+}
+
+.work {
+    position:absolute;
+    margin-left: 107px;
+    font-size: 27px;
+    border-right: solid cornflowerblue;
+    padding: 8px;
+}
+
+.img-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 60px;
+  
+}
+
+.single-img {display: flex;
+    justify-content: center;
+    outline: solid cornflowerblue;
+ 
+}
+
+img:hover {
+    opacity: .5;
+    transition: .9s;
+    cursor: pointer;
 }
 
 
-
-
-
-
-@media screen and (max-width: 992px) {
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+    .card-column {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  
+    /* select the last child to grow to full width if it has space to grow */
+    .card-column:last-child {
+      flex-grow: 1;
+    }
+  }
+  
+  /* media query for larger screens */
+  @media screen and (min-width: 992px) {
+    header {
      
-  }
+    }
   
-  @media screen and (max-width: 768px) {
-    
-  }
-  
-  @media screen and (max-width: 576px) {
-
+    .card-column {
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+    }
   }
   
