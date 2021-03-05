@@ -4,17 +4,22 @@
     padding: 0p;
 }
 
-:root {
+:root {  
+    --cyan: lightcyan; 
+    --grey:  rgb(102, 102, 102);
+    --corn-blue: cornflowerblue;
+    --dark-blue: rgb(40, 40, 116);
+    
 
 
 }
 
 body { font-family: Helvetica, Arial, sans-serif; 
-    color:lightcyan; 
+    color: var(--cyan); 
     font-weight: 500; 
     font-size: 16px; 
     text-decoration: none;
-    background-color: rgb(102, 102, 102);
+    background-color: var(--grey);
     display: flex; flex-direction: column;
     min-height: 100vh;
 }
@@ -24,8 +29,13 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: cornflowerblue;
+    background-color: var(--corn-blue);
    
+}
+
+.name { background-color: var(--grey);
+    padding: 5px;
+  
 }
 
 .nav-links {
@@ -45,7 +55,7 @@ header {
 }
 
 .nav-links li a:hover {
-    color: rgb(40, 40, 116);
+    color: var(--dark-blue);
 }
 
 .banner { 
@@ -58,34 +68,15 @@ header {
 
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px;
-    margin-top: auto;
-}
 
-h4 {font-size: 25px;
-}
+.quote { display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position:absolute;
+    background-color: var(--grey);
+    margin-left: 1500px;
+    padding: 5px;
 
-.contact { 
-    list-style: none;     
-}
-
-.contact li {
-    display: inline-block;
-    padding: 10px;
-    font-weight: bold;
-   
-}
-
-.contact li a {
-    transition: all 0.3s ;  
-}
-
-.contact li a:hover {
-    color: rgb(40, 40, 116);
 }
 
 
@@ -116,11 +107,12 @@ h3 { display: flex;
 }
 
 p { position: absolute;
-    font-size: 12px;
+    display: flex;
+    font-size: 15px;
     padding-left: 30px;
     margin-bottom: 25px;
     margin-left: 90px;
-    border-left: solid cornflowerblue;
+    border-left: solid var(--corn-blue);
 }
 
 .article-2 { display: flex;
@@ -140,7 +132,7 @@ p { position: absolute;
     position:absolute;
     margin-left: 107px;
     font-size: 27px;
-    border-right: solid cornflowerblue;
+    border-right: solid var(--corn-blue);
     padding: 8px;
 }
 
@@ -157,7 +149,7 @@ p { position: absolute;
 
 .single-img {display: flex;
     justify-content: center;
-    outline: solid cornflowerblue;
+    outline: solid var(--corn-blue);
  
 }
 
@@ -165,32 +157,45 @@ img:hover {
     opacity: .5;
     transition: .9s;
     cursor: pointer;
+    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-top: auto;
+}
+
+h4 {font-size: 25px;
+}
+
+.contact { 
+    list-style: none;     
+}
+
+.contact li {
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+   
+}
+
+.contact li a {
+    transition: all 0.3s ;  
+}
+
+.contact li a:hover {
+    color: var(--dark-blue);
 }
 
 
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+
 @media screen and (min-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
-    .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    /* select the last child to grow to full width if it has space to grow */
-    .card-column:last-child {
-      flex-grow: 1;
-    }
-  }
-  
-  /* media query for larger screens */
-  @media screen and (min-width: 992px) {
-    header {
-     
-    }
-  
-    .card-column {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }
-  }
-  
+   
+}
+
+@media screen and (min-width: 992px) {
+
+}
