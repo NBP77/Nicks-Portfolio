@@ -136,6 +136,7 @@ p { position: absolute;
     padding: 8px;
 }
 
+
 .img-area {
     display: flex;
     flex-wrap: wrap;
@@ -157,6 +158,7 @@ img:hover {
     opacity: .5;
     transition: .9s;
     cursor: pointer;
+    
     
 }
 
@@ -192,10 +194,13 @@ h4 {font-size: 25px;
 
 
 
-@media screen and (min-width: 768px) {
-   
+@media screen and (min-width: 800px) {
+   .main {
+       flex: 3;
+   }
+
+.article {
+    order: 1;
 }
 
-@media screen and (min-width: 992px) {
-
-}
+.
