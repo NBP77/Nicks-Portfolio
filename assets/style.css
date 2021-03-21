@@ -30,10 +30,11 @@ header {
     align-items: center;
     padding: 30px;
     background-color: var(--corn-blue);
+    font-size: 35px;
    
 }
 
-.name { background-color: var(--grey);
+.name { 
     padding: 5px;
   
 }
@@ -106,14 +107,6 @@ h3 { display: flex;
     margin-top: 0px;
 }
 
-p { position: absolute;
-    display: flex;
-    font-size: 15px;
-    padding-left: 30px;
-    margin-bottom: 25px;
-    margin-left: 90px;
-    border-left: solid var(--corn-blue);
-}
 
 .article-2 { display: flex;
     flex-direction:column;
@@ -154,13 +147,13 @@ p { position: absolute;
  
 }
 
-img:hover {
+/* img:hover {
     opacity: .5;
     transition: .9s;
     cursor: pointer;
     
     
-}
+} */
 
 footer {
     display: flex;
@@ -193,14 +186,3 @@ h4 {font-size: 25px;
 }
 
 
-
-@media screen and (min-width: 800px) {
-   .main {
-       flex: 3;
-   }
-
-.article {
-    order: 1;
-}
-
-.
