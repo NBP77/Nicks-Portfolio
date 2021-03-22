@@ -1,17 +1,17 @@
 # Nicks-Portfolio
-A collection of projects from Bootcamp 
+An updated collection of projects from Bootcamp 
 
 ## Description
 
--The main goal for this project was to creat a portfolio website that can hold all of the projects I will create during this program. 
+-The main goal for this project was to create a portfolio website that can hold all of the projects I will create during this program. 
  
--Each img has a link to my projects, the first is the Horiseon-Refactor I completed and the rest will fill in as the class progresses. 
+-Each img has a link to my projects, the two projects I decided to showcase are Park Finder amd Workday planner 
  
--It was tough to match the exact layout that was provided because I am still getting used to using flexbox, some of the elements are not responsive with mobile devices.
+-The whole UI has been updated using a CSS framework called Bulma
 
--If I had the time I would have gone back and tried to put everything into flexbox instead of using absolute positioning. 
+-Bulma aloud me to position containers and tiles easily while also giving me a built in mobile responsive site
 
--At the end you are still able to view my profile, get my contacts, use the nav bar and view my projects. 
+-The site still has to some work to be done but is deff an upgrade from the former
 
 ## Installation
 
@@ -23,6 +23,7 @@ GitHub pages: https://nbp77.github.io/Nicks-Portfolio/
 
 ## Usage
 
+
 Examples:
 
 -Functional nav and contact bar
@@ -33,10 +34,10 @@ Examples:
 
 -Hover effects on clickable imgs and links
 
--Big img for first project 
+-Updated clickable screenshots to direct links 
 
 -Semantic HTML elements 
 
 ## Credits
 
-I think the biggest resource for me was google, using it to look up flexbox and css positioning tips.  
+Bulma is one of my new fav tools 

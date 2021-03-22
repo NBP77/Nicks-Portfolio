@@ -4,6 +4,8 @@
   <head>
     <meta charset="UTF-8" />
     <title>Nick's Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
@@ -13,43 +15,42 @@
 
   <body>
     <header>
-      <h1 class="name">Nick Pendergast</h1>
+      <h1>Nick Pendergast</h1>
       <nav class="nav-links">
         <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#work">Work</a></li>
+          <li><a href="#about-me-title">About Me</a></li>
+          <li><a href="#my-work-title">Work</a></li>
           <li><a href="#contact">Contact Me</a></li>
-          <li><a href="#contact">Resume</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="section">
-        <div class="container"></div>
         <div class="tile is-ancestor">
           <div class="tile is-4 is-vertical is-parent">
             <div class="tile is-child box">
-              <p class="title has-text-weight-semibold">About Me:</p>
-              <p>Hello my name is Nick Pendergast and welcome to my page! What you will find is a collecting of my work/projects from Bootcamp and I hope you enjoy. So my last job was a technical recruiter for a big staffing agency in Philly where I specialized in working with Software Developers on a daily basis.
+              <p id="about-me-title" class="title has-text-weight-semibold">About Me:</p>
+              <p id="about-me-content">Hello my name is Nick Pendergast and welcome to my page! What you will find is a collecting of my work/projects from Bootcamp and I hope you enjoy. So my last job was a technical recruiter for a big staffing agency in Philly where I specialized in working with Software Developers on a daily basis.
                     Every day I focused on placing my Software Developers in full stack development opportunities so I learned a lot about the industry and it really started to admire the work they did. One day I realized that I wanted to learn the skill of being a Software Developer myself so I decided it was time for a career change!
-                        I have learned a lot so far and am excited to lean more moving forward! 
+                        I have learned a lot so far and am excited to learn more moving forward! 
               </p>
             </div>
 
-            <div class="tile is-child box">
+            <div class="tile is-child">
               <figure class="image is-3by4">
-                <img src="./assets/images/LinkedIn Pic.jpg" alt="Pic of me">
+                <a href="https://www.linkedin.com/in/nick-pendergast-273014123/" target="_blank"><img src="./assets/images/LinkedIn Pic.jpg" alt="Pic of me"></a>
               </figure>
             </div>
           </div>
 
           <div class="tile is-parent is-8">
             <div class="tile is-child box">
-              <p class="title has-text-centered has-text-weight-semibold">My Work</p>
+              <p id="my-work-title" class="title has-text-centered has-text-weight-semibold">My Work</p>
               <div class="container is is-ancestor">
-                <div class="tile is-parent">
-                    <article class="tile is-child notification is-danger">
+                <div class="tile is-parent"></div>
+                    <article class="tile is-child">
+                        <p id="park-finder-title" class="title has-text-weight-semibold">Park Finder</p>
                       <div class="content">
                         <figure class="image is-2by1">
                             <a href="https://nbp77.github.io/Project-1/" target="_blank"><img src="./assets/images/Park finder img .png" alt="Pic of my park finder project"></a>
@@ -58,17 +59,16 @@
                     </article>
                   </div>
                   <div class="tile is-parent">
-                    <article class="tile is-child notification is-success">
+                    <article class="tile is-child">
+                        <p id="work-day-planner-title" class="title has-text-weight-semibold">Work Day Planner</p>
                       <div class="content">
                         <figure class="image is-2by1">
-                            <img src="./assets/images/Work day img .png">
+                            <a href="https://nbp77.github.io/Work-day-planner/" target="_blank"><img src="./assets/images/Work day img .png" alt="Pic of my planner hw"></a>
                           </figure>                        
                       </div>
                     </article>
                   </div>    
                 </div>
-                  
-
               </div>
             </div>
           </div>
@@ -80,20 +80,13 @@
       <h4>Contact Me</h4>
       <ul class="contact" id="contact">
         <li>(555) 555-555</li>
-        <li><a href="https://github.com/nbp77" target="_blank">Website</a></li>
+        <li><a href="https://onedrive.live.com/?cid=19EB23398767F6CF&id=19EB23398767F6CF%2118396&parId=19EB23398767F6CF%21307&o=OneUp" target="_blank">Resume</a></li>
         <li><a href="https://github.com/nbp77" target="_blank">GitHub</a></li>
         <li>
           <a
             href="https://www.linkedin.com/in/nick-pendergast-273014123/"
             target="_blank"
             >LinkedIn</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/channel/UC_U-mUTtwE7pfMA2JJh4RFQ"
-            target="_blank"
-            >YouTube</a
           >
         </li>
       </ul>

@@ -5,21 +5,20 @@
 }
 
 :root {  
-    --cyan: lightcyan; 
-    --grey:  rgb(102, 102, 102);
-    --corn-blue: cornflowerblue;
-    --dark-blue: rgb(40, 40, 116);
+    --slime-green: #26991e ;
+    --silver: #D2D3CE ;
+    --black: #2C344B ;
     
 
 
 }
 
-body { font-family: Helvetica, Arial, sans-serif; 
-    color: var(--cyan); 
+body { font-family:'Ramabhadra', sans-serif;
+    color: var(--black); 
     font-weight: 500; 
     font-size: 16px; 
     text-decoration: none;
-    background-color: var(--grey);
+    background-color: var(--black);
     display: flex; flex-direction: column;
     min-height: 100vh;
 }
@@ -29,15 +28,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px;
-    background-color: var(--corn-blue);
-    font-size: 35px;
+    font-size: 40px;
+    color: var(--slime-green);
    
 }
-
-.name { 
-    padding: 5px;
   
-}
+
 
 .nav-links {
     list-style: none;
@@ -48,6 +44,7 @@ header {
     display: inline-block;
     padding: 10px;
     font-weight: bold;
+    
 }
 
 
@@ -56,16 +53,50 @@ header {
 }
 
 .nav-links li a:hover {
-    color: var(--dark-blue);
+    color: var(--slime-green);
 }
 
-/* img:hover {
+img:hover {
     opacity: .5;
     transition: .9s;
     cursor: pointer;
-    
-    
-} */
+
+}
+
+#about-me-title{
+    font-size: 40px;
+    color: var(--black);
+}
+
+#about-me-content{
+    font-size: 22px;
+    color: var(--black);
+    letter-spacing: 2px;
+}
+
+.box {
+    background-color: var(--slime-green);
+}
+
+#my-work-title {
+    font-size: 40px;
+    color: var(--black);
+    margin: 5px;
+}
+
+#park-finder-title {
+    color: var(--black);
+}
+
+#work-day-planner-title {
+    color: var(--black);
+}
+
+img {
+    border-radius: 5px;
+}
+
+
 
 footer {
     display: flex;
@@ -73,10 +104,10 @@ footer {
     align-items: center;
     padding: 30px;
     margin-top: auto;
+    font-size: 40px;
+    color: var(--slime-green);
 }
 
-h4 {font-size: 25px;
-}
 
 .contact { 
     list-style: none;     
@@ -94,7 +125,7 @@ h4 {font-size: 25px;
 }
 
 .contact li a:hover {
-    color: var(--dark-blue);
+    color: var(--slime-green);
 }
 
 
